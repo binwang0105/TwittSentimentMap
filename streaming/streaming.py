@@ -36,7 +36,6 @@ class TwittMapListener(tweepy.StreamListener):
             print "message loading error"
 
 if __name__ == '__main__':
-
         l = TwittMapListener()
         auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
         auth.set_access_token(access_token, access_token_secret)
